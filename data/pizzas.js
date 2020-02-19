@@ -47,7 +47,7 @@ async function getRecent () {
 async function get (pizzaId) {
 //   if (!pizzas[pizzaId]) throw new Error('Pizza not found')
 //   return pizzas[pizzaId]
-  return PizzaStore.find({
+  return PizzaStore.findOne({
     where: {
       id: pizzaId
     },
